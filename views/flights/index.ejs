@@ -44,6 +44,25 @@
             
         </tbody>
     </table>
+
+<br><br>
+<h2>Destinations</h2>
+<form id="add-destination-form" method="POST" action="/flights/<%= flights._id %>/reviews">
+    <label>Destinations:</label>
+    <!-- <textarea name="content"></textarea>
+    <label>Rating:</label> -->
+    <select name="rating">
+        <option value="1">AUS</option>
+        <option value="2">DFW</option>
+        <option value="3">DEN</option>
+        <option value="4">LAX</option>
+        <option value="5">SAN</option>
+    </select>
+    <input type="submit" value="Add Destination">
+</form>
+
+
+
 </body>
 
 </html>
